@@ -1,8 +1,5 @@
-var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
+var makeBlinkyDancer = function (top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
-  // this.$node = $('<span class="blinky"><img src="images/bobbin.png" alt="blank"></span>');
-  // this.setPosition(top, left);
-  // $( ".inner" ).append( "<p>Test</p>" );
   this.$node = $('<span class="blinky"><img src="images/bobbin.png" alt="blank"></span>)');
   this.setPosition(top, left);
 };
@@ -11,7 +8,7 @@ makeBlinkyDancer.prototype = Object.create(makeDancer.prototype);
 
 makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
 
-makeBlinkyDancer.prototype.step = function() {
+makeBlinkyDancer.prototype.step = function () {
   makeDancer.prototype.step.call(this);
 
   this.$node.toggle();
@@ -21,7 +18,9 @@ makeBlinkyDancer.prototype.step = function() {
 // this.$node.animate( {transform: rotate(0.5turn) } );
 // this.$node.animate( {bottom: '100px', top: '50'} );
 
-
+// this.$node = $('<span class="blinky"><img src="images/bobbin.png" alt="blank"></span>');
+// this.setPosition(top, left);
+// $( ".inner" ).append( "<p>Test</p>" );
 
 
 

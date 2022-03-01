@@ -19,12 +19,23 @@ makeDancer.prototype.setPosition = function (top, left) {
   this.$node.css(styleSettings);
 };
 
-makeDancer.prototype.lineUp = function (newLeft) {
-  // this.$node.animate({ left: '0px' });
+makeDancer.prototype.lineUp = function (newLeft) { // vertical
+  // this.$node.setPosition(this.top, 50));
   this.setPosition(700, this.left);
   this.setPosition(700, newLeft);
-  //this.$node.animate ( {left: newLeft} );
+  //this.setPosition(this.top, newLeft);
 };
+
+// makeDancer.prototype.congaLine = function (newLeft) { // horizontal
+//   this.setPosition(700, this.left);
+//   this.setPosition(700, newLeft);
+// };
+
+
+
+
+
+
 
 // MakeDancer.prototype.moveLeftN = function (n) {
 //   for (let i = 0; i < n; i++) {

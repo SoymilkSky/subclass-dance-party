@@ -32,15 +32,28 @@ $(document).ready(function () {
     console.log(window.dancers);
   });
 
-  $('.lineUpDancerButton').on('click', function (event) {
-    var left = 0;
+  $('.lineUpDancerButton').on('click', function (event) { // verticall
+    var left = 0; // var top = 0;
     window.dancers.forEach(function (item) {
-      item.lineUp(left);
-      left += 100;
+      // I think we can also do a vertical alignment just in case since
+      // the assignment says to line them up on one side of the stage? idk .
+      // kk
+      item.lineUp(left); // item.lineUp(top);
+      left += 100; // top += 100;
     });
     // declare a variable that will determine which pixel all the dancers will line up on
     // loop through all dancers on the page
     // for each of the dancers, get their left value and set it to be the lineup value
   });
+
+
+
+  // $('.congaLineButton').on('click', function (event) { // horizontal
+  //   var left = 0;
+  //   window.dancers.forEach(function (item) {
+  //     item.lineUp(left);
+  //     left += 100;
+  //   });
+  // });
 });
 

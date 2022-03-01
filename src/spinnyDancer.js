@@ -13,6 +13,6 @@ makeSpinnyDancer.prototype.step = function() {
   // this got it to spin but like? not really????
   // var rand = Math.floor(rotateNum * 180) & 360;
   // this.$node.css('transform', 'rotate(' + rand + 'deg)');
-  this.$node.animate({'margin-left': '200px'}, 5000);
-  this.$node.animate({'margin-left': '500px'}, 5000);
+  this.$node.animate({'margin-left': '20px'}, 1000);
+  this.$node.animate({'margin-left': '50px'}, 1000);
 };
