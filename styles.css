@@ -25,3 +25,19 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+.jumpy {
+  background-color: green;
+  width:100px;
+  height:100px;
+  display:block;
+  position:absolute;
+}
+
+.spinny {
+  width:100px;
+  height:100px;
+  background:white;
+  display:block;
+  position:absolute;
+}
