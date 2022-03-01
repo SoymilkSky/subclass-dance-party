@@ -25,7 +25,6 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
-
 .jumpy {
   background-color: green;
   width:100px;
@@ -33,11 +32,23 @@ body, a:link, a:visited, a:active{
   display:block;
   position:absolute;
 }
-
 .spinny {
   width:100px;
   height:100px;
-  background:white;
+  background-color:white;
+  border-radius: 20px;
+  border-color: gold;
   display:block;
   position:absolute;
+  animation: rotation 4s infinite linear;
+  /* these lines make the spinny rotate but I don't think they want us to
+  do it this way and call step*/
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  } to {
+    transform: rotate(359deg);
+  }
 }
