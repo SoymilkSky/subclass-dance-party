@@ -5,6 +5,8 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
+  background-image: url("https://wallpaperaccess.com/full/1820890.png");
+
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -22,23 +24,24 @@ body, a:link, a:visited, a:active{
 }
 .dancer{
   border:10px solid red;
-  border-radius:10px;
+  border-radius:2px;
   position:absolute;
+}
+.blinky{
+  display: inline-block;
+  position: absolute;
 }
 .jumpy {
-  background-color: green;
-  width:100px;
-  height:100px;
+  /* background-color: green; */
   display:block;
   position:absolute;
+  display: inline-block;
 }
 .spinny {
-  width:100px;
-  height:100px;
-  background-color:white;
+  /* background-color:white;
   border-radius: 20px;
-  border-color: gold;
-  display:block;
+  border: gold; */
+  display: inline-block;
   position:absolute;
   animation: rotation 4s infinite linear;
   /* these lines make the spinny rotate but I don't think they want us to
@@ -52,3 +55,5 @@ body, a:link, a:visited, a:active{
     transform: rotate(359deg);
   }
 }
+
+

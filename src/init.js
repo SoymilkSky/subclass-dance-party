@@ -1,7 +1,7 @@
-$(document).ready(function() {
+$(document).ready(function () {
   window.dancers = [];
 
-  $('.addDancerButton').on('click', function(event) {
+  $('.addDancerButton').on('click', function (event) {
     /* This function sets up the click handlers for the create-dancer
      * buttons on dancefloor.html. You should only need to make one small change to it.
      * As long as the "data-dancer-maker-function-name" attribute of a
@@ -27,8 +27,20 @@ $(document).ready(function() {
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
-    console.log(dancer);
     $('body').append(dancer.$node);
+    window.dancers.push(dancer);
+    console.log(window.dancers);
+  });
+
+  $('.lineUpDancerButton').on('click', function (event) {
+    var left = 0;
+    window.dancers.forEach(function (item) {
+      item.lineUp(left);
+      left += 100;
+    });
+    // declare a variable that will determine which pixel all the dancers will line up on
+    // loop through all dancers on the page
+    // for each of the dancers, get their left value and set it to be the lineup value
   });
 });
 
