@@ -12,6 +12,15 @@ makeBlinkyDancer.prototype.step = function() {
   this.$node.toggle();
 };
 
+// this.$node.animate( {transform: rotate(0.5turn) } );
+// this.$node.animate( {transform: rotate(0.5turn) } );
+// this.$node.animate( {bottom: '100px', top: '50'} );
+
+
+
+
+
+
 // var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
 //   var blinkyDancer = makeDancer(top, left, timeBetweenSteps);
 
