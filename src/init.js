@@ -46,6 +46,17 @@ $(document).ready(function () {
     // for each of the dancers, get their left value and set it to be the lineup value
   });
 
+  // $('img').mouseover(function () {
+  //   $('#listen').css({ transform: 'scale(2)' });
+  // }).mouseout(function () {
+  //   $('#listen').css({ transform: 'scale(1.0)' });
+  // });
+
+  $('.jumpy').hover(function () {
+    $('.jumpy').css('background-color', "lightblue");
+  }, function () {
+    $('.jumpy').css("background-color", "white");
+  });
 
 
   // $('.congaLineButton').on('click', function (event) { // horizontal

@@ -1,6 +1,6 @@
 var makeBlinkyDancer = function (top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<span class="blinky"><img src="images/bobbin.png" alt="blank"></span>)');
+  this.$node = $('<span id="listen" class="blinky"><img src="images/bobbin.png" alt="blank"></span>)');
   this.setPosition(top, left);
 };
 
